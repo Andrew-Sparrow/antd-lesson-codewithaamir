@@ -15,6 +15,7 @@ import {
 const UTable = ({
   rows = 10,
   onAddNewUser,
+  onEditUser,
   onDeleteUser,
   data,
   onChange
@@ -47,7 +48,7 @@ const UTable = ({
       render: (record) => {
         return (
           <>
-            <EditOutlined />
+            <EditOutlined onClick={() => onEditUser(record)} />
             <DeleteOutlined
               onClick={() => onDeleteUser(record)}
               style={{color: "red", marginLeft: 12}}/>
