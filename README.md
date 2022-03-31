@@ -1,8 +1,7 @@
 # Project to learn Ant Design
 
 
-![Screenshot](https://www.screencast.com/t/PDpxAhpK)
-
+![screenshot](public/img/screenshot.png?raw=true "Title")
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
