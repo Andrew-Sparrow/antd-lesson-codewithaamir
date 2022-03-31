@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import UTable from './components/UTable';
 import data from './data';
+import {Modal} from 'antd';
 
 const App = () => {
   const [dataSource, setDataSource] = useState(data);
@@ -9,12 +10,19 @@ const App = () => {
   let currentId = dataSource[dataSource.length - 1].id;
 
   const onDeleteUser = (record) => {
-    setDataSource((previousState) => {
-      return previousState.filter((user) => {
-        return user.id !== record.id;
-      });
-    });
-  }
+    Modal.confirm({
+      title: 'Are you sure, you want to delete this student record?',
+      okText: 'Yes',
+      okType: 'danger',
+      onOk: () => {
+        setDataSource((previousState) => {
+          return previousState.filter((user) => {
+            return user.id !== record.id;
+          });
+        });
+      }
+    })
+  };
 
   const onAddNewUser = () => {
 
