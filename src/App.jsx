@@ -76,6 +76,7 @@ const App = () => {
         >
           <Input
             value={editUserData?.name}
+            style={{marginBottom: 20}}
             onChange={(evt) => {
               setEditUserData((previous) => {
                 return {
@@ -87,6 +88,7 @@ const App = () => {
           />
           <Input
             value={editUserData?.email}
+            style={{marginBottom: 20}}
             onChange={(evt) => {
               setEditUserData((previous) => {
                 return {
@@ -98,6 +100,7 @@ const App = () => {
           />
           <Input
             value={editUserData?.address}
+            style={{marginBottom: 20}}
             onChange={(evt) => {
               setEditUserData((previous) => {
                 return {

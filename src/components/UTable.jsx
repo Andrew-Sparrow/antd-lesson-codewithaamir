@@ -73,7 +73,6 @@ const UTable = ({
             <Table
               dataSource={data}
               columns={columns}
-              // onChange={onChange}
               pagination={{
                 pageSize: rows,
                 hideOnSinglePage: true,
