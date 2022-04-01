@@ -1,14 +1,9 @@
 # Project to learn Ant Design
 
+[Live version of site on Github Pages](https://andrew-sparrow.github.io/antd-lesson-codewithaamir)
 
 ![screenshot](public/img/screenshot.png?raw=true "Title")
-## Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 

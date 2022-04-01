@@ -63,9 +63,13 @@ const UTable = ({
       <header className='App-header'>
         <Row>
           <Col md={{span: 12, offset: 6}}>
-            <Space align="center">
-              <Button type="primary" onClick={() => onAddNewUser()}>Add new User</Button>
-            </Space>
+            <Button
+              type="primary"
+              onClick={() => onAddNewUser()}
+              style={{marginBottom: 20, marginTop: 20}}
+            >
+              Add new User
+            </Button>
             <Table
               dataSource={data}
               columns={columns}
